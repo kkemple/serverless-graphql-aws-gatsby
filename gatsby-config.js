@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -5,6 +9,17 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    {
+      resolve: "gatsby-source-graphql",
+      options: {
+        url: process.env.APPSYNC_GRAPHQL_ENDPOINT,
+        headers: {
+          "x-api-key": process.env.APPSYNC_API_KEY,
+        },
+        typeName: "conference",
+        fieldName: "conferences",
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

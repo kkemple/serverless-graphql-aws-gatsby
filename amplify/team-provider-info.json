@@ -1,0 +1,14 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "serverlessgraphqlaws-dev-20190810210122-authRole",
+            "UnauthRoleArn": "arn:aws:iam::693340411157:role/serverlessgraphqlaws-dev-20190810210122-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::693340411157:role/serverlessgraphqlaws-dev-20190810210122-authRole",
+            "Region": "eu-west-1",
+            "DeploymentBucketName": "serverlessgraphqlaws-dev-20190810210122-deployment",
+            "UnauthRoleName": "serverlessgraphqlaws-dev-20190810210122-unauthRole",
+            "StackName": "serverlessgraphqlaws-dev-20190810210122",
+            "StackId": "arn:aws:cloudformation:eu-west-1:693340411157:stack/serverlessgraphqlaws-dev-20190810210122/a0935cb0-bba9-11e9-980f-0276cc331c40"
+        }
+    }
+}
